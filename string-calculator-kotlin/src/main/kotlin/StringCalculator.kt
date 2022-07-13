@@ -5,9 +5,5 @@ class StringCalculator() {
 //        return calculate(Queue<>, Queue<Any>)
 //    }
 
-//    fun calculate(operator: Queue<Any>, operand: Queue<Any>): Double {
-//        return 0.1;
-//    }
-
 }
 

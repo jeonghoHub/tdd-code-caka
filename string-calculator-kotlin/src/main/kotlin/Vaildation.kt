@@ -1,7 +1,7 @@
-class Vaildation(private val expressionParam: String?) {
+class Vaildation private constructor(private val expressionParam: String?) {
 
     companion object {
-        val REGEX: Regex = "^\\d+( ?[+\\-*/] ?\\d+)*\$".toRegex()
+        private val REGEX: Regex = "^\\d+( ?[+\\-*/] ?\\d+)*\$".toRegex()
 
         fun from(expressionParam: String?): Vaildation {
             validate(expressionParam)
@@ -13,6 +13,19 @@ class Vaildation(private val expressionParam: String?) {
             if(!expressionParam.matches(REGEX)) throw IllegalArgumentException("유효성 검증 실패")
         }
     }
+    fun get(): String? = this.expressionParam?.replace(" ", "")
 
-    fun get(): String? = this.expressionParam
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other !is Vaildation) return false
+
+        if (expressionParam != other.expressionParam) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        return expressionParam?.hashCode() ?: 0
+    }
+
 }
