@@ -6,12 +6,21 @@ class StringCalculator() {
 //        println(expressionParam.get())
     }
 
-    fun operatorExtraction(expressionParam: Vaildation):Queue<Char> {
-        val expression = expressionParam.get()
-        val operator = expression?.replace("\\d", "")
-        println(operator)
-        return LinkedList()
+    fun operatorExtractor(expressionParam: Vaildation): Queue<Char> {
+        val expression = expressionParam.get() ?: error("null") //        println(operators)
+        return expression.replace(Regex("\\d"), "")
+            .split("")
+            .filter(String::isNotEmpty)
+            .map(String::single)
+            .toCollection(LinkedList())
     }
+
+//    fun operandExtractor(expressionParam: Vaildation) {
+//        return expressionParam.get().split(Regex("\\D"))
+//            .map {}
+//
+//
+//    }
 
 }
 

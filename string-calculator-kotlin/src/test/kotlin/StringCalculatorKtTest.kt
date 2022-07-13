@@ -14,16 +14,38 @@ import java.util.stream.Stream
 internal class StringCalculatorKtTest {
 
     @ParameterizedTest
-    @MethodSource("expressionProvider")
+    @CsvSource(
+        "1+5-6*10:+,-,*"
+        , delimiter = ':')
     fun 연산자분리(expression: Vaildation, expected: Queue<Char>) {
-//        given
+        //given
         val stringCalculator: StringCalculator = StringCalculator()
-//        when
-        val operator: Queue<Char> = stringCalculator.operatorExtraction(expression)
-//        then
+        //when
+        val operator: Queue<Char> = stringCalculator.operatorExtractor(expression)
+        //then
         assertThat(operator).isEqualTo(expected)
     }
+//    @ParameterizedTest
+//    @MethodSource("expressionProvider")
+//    fun 피연산자분리(expression: Vaildation) {
+//        //given
+//        val stringCalculator: StringCalculator = StringCalculator()
+//        //when
+//        val operand: Queue<Double> = stringCalculator.operandExtractor(expression)
+//        //then
+//        assertThat(operand).isEqualTo(listOf("1","5","10"))
+//    }
 
+
+//    companion object {
+//        @JvmStatic
+//        fun expressionProvider(): Stream<Arguments> {
+//            return Stream.of(
+//                Arguments.of(Vaildation.from("1+5-10")),
+//                Arguments.of(Vaildation.from("1+5-10*30")),
+//            )
+//        }
+//    }
     companion object {
         @JvmStatic
         fun expressionProvider(): Stream<Arguments> {
