@@ -1,3 +1,3 @@
 
-rootProject.name = "string-calculator-kotlin"
+rootProject.name = "string-calculator-kotlin1"
 
