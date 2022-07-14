@@ -1,12 +1,10 @@
 import org.assertj.core.api.Assertions.*
-import org.junit.jupiter.api.Assertions.*
-import org.junit.jupiter.api.Test
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.CsvSource
 import org.junit.jupiter.params.provider.NullAndEmptySource
 import org.junit.jupiter.params.provider.ValueSource
 
-internal class VaildationTest {
+internal class VaildatorTest {
 
     @ParameterizedTest
     @ValueSource(strings = [
@@ -18,14 +16,14 @@ internal class VaildationTest {
     ])
     fun 유효성검증을_통과하면_예외가_발생하지않는다(actual: String) {
         assertThatCode {
-            Vaildation.from(actual)
+            Vaildator.from(actual)
         }.doesNotThrowAnyException()
     }
     @ParameterizedTest
     @NullAndEmptySource
     fun 유효성검증_통과못하면_예외발생(actual: String?) {
         assertThatThrownBy {
-            Vaildation.from(actual)
+            Vaildator.from(actual)
         }
     }
     @ParameterizedTest
@@ -35,7 +33,7 @@ internal class VaildationTest {
         "2 + 3 +5/ 6-3:2+3+5/6-3"
     , delimiter = ':')
     fun get으로값_가져올시_공백이_제거되어야함(expression: String, expected: String ) {
-        val value = Vaildation.from(expression)
+        val value = Vaildator.from(expression)
         assertThat(value.get()).isEqualTo(expected)
     }
 
