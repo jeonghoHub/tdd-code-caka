@@ -1,7 +1,7 @@
-export default class ExpressionExtractor {
+const REGEXP: RegExp = /^\d+( ?[+\-*/] ?\d+)*$/g;
 
+export default class ExpressionExtractor {
     private expression: string;
-    private REGEX: RegExp = /^\d+( ?[+\-*/] ?\d+)*$/g;
 
     constructor(expression: string) {
         this.expression = this.validate(expression);
@@ -11,14 +11,13 @@ export default class ExpressionExtractor {
 
         return "123";
     }
-
     operandExtract(): string {
 
         return "123";
     }
 
     private validate(expression: string): string {
-        if(!this.REGEX.test(expression)) {
+        if(!REGEXP.test(expression)) {
             throw new Error('유효하지 못한 값 입니다')
         }
         return expression;
