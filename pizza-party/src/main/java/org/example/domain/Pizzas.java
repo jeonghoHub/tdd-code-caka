@@ -7,20 +7,22 @@ import java.util.stream.IntStream;
 
 public class Pizzas {
     private final List<Pizza> pizzas;
-    public Pizzas(List<Pizza> pizzas) {
+    public Pizzas(final List<Pizza> pizzas) {
         this.pizzas = pizzas;
     }
-    public static Pizzas init(int pizzaCount, int piece) {
-        List<Pizza> pizzas = IntStream.rangeClosed(1, pizzaCount)
+    public static Pizzas init(final int piece, final int pizzaCount) {
+        final List<Pizza> pizzas = IntStream.range(0, pizzaCount)
                 .mapToObj(pizza -> new Pizza(piece))
-                .collect(Collectors.toList());
+                .toList();
         return new Pizzas(pizzas);
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Pizzas pizzas1)) return false;
-        return pizzas.equals(pizzas1.pizzas);
+        if (o == null || getClass() != o.getClass()) return false;
+        Pizzas pizzas1 = (Pizzas) o;
+        return Objects.equals(pizzas, pizzas1.pizzas);
     }
 
     @Override

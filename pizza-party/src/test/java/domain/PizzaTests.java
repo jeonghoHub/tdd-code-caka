@@ -1,3 +1,5 @@
+package domain;
+
 import org.example.domain.Pizza;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
