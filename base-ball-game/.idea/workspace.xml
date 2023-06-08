@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="765bba58-1f0d-4782-ac9c-74d78d92a2da" name="Changes" comment="" />
+    <list default="true" id="f0e5c399-4ca2-4648-840f-f394e03e87b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/application/Output.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Pitcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/PitcherValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/domain/BatterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/domain/PitcherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/domain/PitcherValueTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +43,17 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="number-baseball-game" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -35,37 +67,24 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2JM1TX5N19D9EOSAEAEOp0M0Qhq" />
+  <component name="ProjectId" id="2QfzyVEl45210lLI0bSrY5axVbl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/ljh/Documents/GitHub/code-kata/pizza-party/src/main/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/ljh/Documents/GitHub/base-ball-game",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.example" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Gradle.PizzasTests (1)">
-    <configuration name="PizzasTests (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+}]]></component>
+  <component name="RunManager" selected="Gradle.Tests in 'number-baseball-game.test'">
+    <configuration name="PitcherTest.생성하는_숫자는_세자리여야만_한다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -78,7 +97,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;domain.PizzasTests&quot;" />
+            <option value="&quot;domain.PitcherTest.생성하는_숫자는_세자리여야만_한다&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -88,7 +107,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PizzasTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PitcherValueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -101,7 +120,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;PizzasTests&quot;" />
+            <option value="&quot;domain.PitcherValueTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -111,7 +130,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PizzasTests.test (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PitcherValueTest.중복된다면_False를_반환" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -124,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;domain.PizzasTests.test&quot;" />
+            <option value="&quot;domain.PitcherValueTest.중복된다면_False를_반환&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -134,7 +153,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PizzasTests.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PitcherValueTest.중복이안된다면_True를_반환" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -147,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;PizzasTests.test&quot;" />
+            <option value="&quot;domain.PitcherValueTest.중복이안된다면_True를_반환&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +176,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'pizza-party.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'number-baseball-game.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -180,27 +199,25 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PizzasTests (1)" />
-        <item itemvalue="Gradle.PizzasTests.test (1)" />
-        <item itemvalue="Gradle.Tests in 'pizza-party.test'" />
-        <item itemvalue="Gradle.PizzasTests.test" />
-        <item itemvalue="Gradle.PizzasTests" />
+        <item itemvalue="Gradle.Tests in 'number-baseball-game.test'" />
+        <item itemvalue="Gradle.PitcherTest.생성하는_숫자는_세자리여야만_한다" />
+        <item itemvalue="Gradle.PitcherValueTest.중복이안된다면_True를_반환" />
+        <item itemvalue="Gradle.PitcherValueTest.중복된다면_False를_반환" />
+        <item itemvalue="Gradle.PitcherValueTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="765bba58-1f0d-4782-ac9c-74d78d92a2da" name="Changes" comment="" />
-      <created>1671873147676</created>
+      <changelist id="f0e5c399-4ca2-4648-840f-f394e03e87b6" name="Changes" comment="" />
+      <created>1685759679706</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1671873147676</updated>
-      <workItem from="1671873148671" duration="1265000" />
-      <workItem from="1672048219072" duration="11084000" />
-      <workItem from="1673712834198" duration="27000" />
-      <workItem from="1681996184561" duration="907000" />
-      <workItem from="1681997630767" duration="37000" />
+      <updated>1685759679706</updated>
+      <workItem from="1685759680878" duration="16423000" />
+      <workItem from="1685976381446" duration="251000" />
+      <workItem from="1686147282493" duration="5000" />
     </task>
     <servers />
   </component>
