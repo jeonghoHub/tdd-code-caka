@@ -20,14 +20,12 @@ public class PitcherTest {
         pitcher = new Pitcher();
     }
 
-    @ParameterizedTest
-    @CsvSource({"100,999"})
-    void 생성하는_숫자는_세자리여야만_한다(int minimum, int maximum) {
+    @Test
+    void 생성하는_숫자는_세자리여야만_한다() {
         //given when
-        int value = pitcher.getValue();
+        var value = pitcher.getValue();
         //then
-        assertThat(value >= minimum).isTrue();
-        assertThat(value <= maximum).isTrue();
+        assertThat(value.length()).isEqualTo(3);
     }
 
 }
