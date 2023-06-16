@@ -7,7 +7,7 @@ public class Pitcher {
         this.pitcherValue = new PitcherValue();
     }
 
-    public int getValue() {
+    public String getValue() {
         return pitcherValue.getValue();
     }
 }
