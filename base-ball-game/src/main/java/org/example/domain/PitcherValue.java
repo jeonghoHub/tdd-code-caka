@@ -1,37 +1,39 @@
 package org.example.domain;
 
-import java.util.Random;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class PitcherValue {
-    private int value;
+    private final String value;
 
     public PitcherValue() {
         this.value = generateValue();
     }
 
-    public int generateValue() {
-        while(true) {
-            int randomInt = new Random().nextInt(900) + 100;
-            if(isValueAvailable(randomInt)) {
-                return randomInt;
-            }
+    public String generateValue() {
+        Set<Integer> values = new HashSet<>();
+        while (values.size() < 3) {
+            int randomValue = (int) (Math.random() * 9) + 1;
+            values.add(randomValue);
         }
+        return values.stream()
+                .map(String::valueOf)
+                .collect(Collectors.joining());
     }
 
-    public boolean isValueAvailable(int randomInt) {
-        String randomString = String.valueOf(randomInt);
-        for (int i = 0; i < randomString.length(); i++) {
-            char currentChar = randomString.charAt(i);
-            for(int j = i + 1; j < randomString.length(); j++) {
-                if (currentChar == randomString.charAt(j)) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-
-    public int getValue() {
+    public String getValue() {
         return value;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof PitcherValue that)) return false;
+        return Objects.equals(getValue(), that.getValue());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getValue());
     }
 }
